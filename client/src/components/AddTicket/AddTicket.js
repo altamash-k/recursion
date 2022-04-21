@@ -40,14 +40,14 @@ const AddTicket = ({ setOpenModal }) => {
         </div>
         <div className="body">
         <form action="#">
-            <label for="fname">Full Name</label>
+            <label for="fname" className='label'>Full Name</label>
             <input type="text" id="fullname" name="fullname" placeholder="Your name.."
             onChange={(e)=>
                 setName(e.target.value)
             }
              />
 
-            <label for="lname">Issue</label>
+            <label for="lname" className='label'>Issue</label>
             <input type="text" id="issue" name="issue" placeholder="Your Issue..." 
 
             onChange={(e)=>
@@ -55,7 +55,7 @@ const AddTicket = ({ setOpenModal }) => {
             }
             />
 
-            <label for="category">Category</label>
+            <label for="category" className='label'>Category</label>
             <select id="category" name="category" 
                 onChange={(e)=>
                     setcategory(e.target.value)

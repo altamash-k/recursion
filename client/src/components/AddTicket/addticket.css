@@ -1,7 +1,11 @@
+@import url(https://db.onlinewebfonts.com/c/1ccdd11fd9d1d81756c40d7acb17d0aa?family=Circular+Spotify+Tx+T+Light);
+body {
+	font-family: "Circular Spotify Tx T Light", sans-serif;
+ }
 .modalBackground {
     width: 100vw;
     height: 100vh;
-    
+    font-family: "Circular Spotify Tx T Light", sans-serif;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -15,6 +19,15 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+  .label {
+    font-size: 20px;
+    font-family: "Circular Spotify Tx T Light", sans-serif;
+    font-weight: bold;
+    color: #212121;
+    text-align: left;
+    float: left;
+  
   }
   .modalContainer {
     width: 500px;
@@ -32,7 +45,7 @@
   .modalContainer .title {
     display: inline-block;
     text-align: center;
-    margin-top: 10px;
+    
   }
   
   .titleCloseBtn {
@@ -50,6 +63,7 @@
   .modalContainer .body {
     flex: 50%;
     display: flex;
+    font-family: "Circular Spotify Tx T Light", sans-serif;
     justify-content: center;
     align-items: center;
     font-size: 1.7rem;
@@ -77,4 +91,5 @@
   
   #cancelBtn {
     background-color: crimson;
+    font-family: "Circular Spotify Tx T Light", sans-serif;
   }
