@@ -4,7 +4,7 @@ body {
  }
 .modalBackground {
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     font-family: "Circular Spotify Tx T Light", sans-serif;
     position: fixed;
     display: flex;
@@ -14,11 +14,21 @@ body {
   input[type=text], select {
     width: 100%;
     padding: 12px 20px;
+    font-size: 16px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+  .upper-form{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .option {
+    font-size: 16px;
   }
   .label {
     font-size: 20px;
@@ -29,9 +39,12 @@ body {
     float: left;
   
   }
+  .delete {
+    background-color: red;
+  }
   .modalContainer {
     width: 500px;
-    height: 500px;
+    height: 900px;
     border-radius: 12px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -58,6 +71,8 @@ body {
     border: none;
     font-size: 25px;
     cursor: pointer;
+    margin-top: 1rem;
+    
   }
   
   .modalContainer .body {
@@ -77,7 +92,7 @@ body {
     align-items: center;
   }
   
-  .modalContainer .footer button {
+  /* .modalContainer .footer button {
     width: 150px;
     height: 45px;
     margin: 10px;
@@ -87,7 +102,7 @@ body {
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
-  }
+  } */
   
   #cancelBtn {
     background-color: crimson;

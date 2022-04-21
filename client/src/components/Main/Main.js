@@ -16,7 +16,7 @@ const Main = () => {
 		<div className="main_container">
 			<nav className="navbar">
 				<h1>helper</h1>
-				<button className="white_btn" onClick={handleLogout}>
+				<button className="logout" onClick={handleLogout}>
 					Logout
 				</button>
 			</nav>
@@ -24,16 +24,16 @@ const Main = () => {
 				<div className="info">
 					{/* <h2>Welcome Helper <br /> Raise an Issue?</h2> <br /><br /> */}
 					<h2>Welcome Helper <br /><span>Raise an Issue?</span></h2> <br /><br />
-					<a className="info-btn" onClick={() => {
+					<a className="info-btn btn-grad new-ticket" onClick={() => {
 						setModalOpen(true);
 						}}>Add New Ticket</a> <br /> <br />
 					{modalOpen && <AddTicket setOpenModal={setModalOpen} />}
 
-					<h3 style={{marginLeft: '8%', marginTop: '5px'}}>OR</h3> <br />
+					<h3 style={{marginLeft: '12%', marginTop: '5px'}}>OR</h3> <br />
 
-					<a className="info-btn" onClick={() => {
+					<a className="info-btn btn-grad" onClick={() => {
 						setPrevTicket(true);
-						}}>View Previous Tickets</a>
+						}}>Previous Tickets</a>
 					{prevTicket && <PrevTicket setOpenModal={setPrevTicket} />}
 				</div>	
 			</div>

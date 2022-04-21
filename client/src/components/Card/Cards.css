@@ -5,3 +5,10 @@
     height: 150px;
     box-shadow: 2px 2px 7px;
 }
+
+.heading {
+    /* margin-left: 100px; */
+    padding-left: 188px;
+    /* text-align: center; */
+    color: #000042;
+}
