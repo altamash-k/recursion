@@ -17,6 +17,7 @@ const Admin = () => {
 					Logout
 				</button>
 			</nav>
+			
 			<div className="container">
                 <Sidebar />
                 <Card />
