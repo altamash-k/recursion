@@ -3,7 +3,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import axios from "axios";
 import Main from "./components/Main/Main";
 import Signup from "./components/Singup";
-import Login from "./components/Login";
+import Login from "./components/Login/Login";
 import Admin from "./components/Admin/Admin";
 
 function App() {

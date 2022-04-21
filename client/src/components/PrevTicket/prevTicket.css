@@ -10,6 +10,7 @@
   input[type=text], select {
     width: 100%;
     padding: 12px 20px;
+    height: 50px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -18,15 +19,19 @@
   }
   .modalContainer {
     width: 500px;
-    height: 500px;
+    height: 550px;
     border-radius: 12px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
-    padding: 25px;
-    margin-top: -850px;
+    /* padding: 25px; */
+    margin-top: -1000px;
     margin-left: 300px;
+  }
+  .delete {
+    background-color: red;
+
   }
   
   .modalContainer .title {
@@ -63,7 +68,7 @@
     align-items: center;
   }
   
-  .modalContainer .footer button {
+  /* .modalContainer .footer button {
     width: 150px;
     height: 45px;
     margin: 10px;
@@ -73,7 +78,7 @@
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
-  }
+  } */
   
   #cancelBtn {
     background-color: crimson;
