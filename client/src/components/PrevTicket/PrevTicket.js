@@ -5,6 +5,7 @@ import './prevTicket.css'
 const PrevTicket = ({ setOpenModal }) => {
 
     const [listDisplay,setList] = React.useState([])
+    const [issue,setIssue] = React.useState("pending")
 
     React.useEffect(()=>{
         submit()
@@ -68,6 +69,7 @@ const PrevTicket = ({ setOpenModal }) => {
           </button>
           <button>Continue</button>
         </div>
+        <h2>Your Issue is currently {setIssue}</h2>
       </div>
     </div>
   )
