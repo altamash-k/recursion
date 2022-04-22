@@ -20,6 +20,7 @@ import Stack from '@mui/material/Stack';
 const PrevTicket = ({ setOpenModal }) => {
 
     const [listDisplay,setList] = React.useState([])
+    const [issue,setIssue] = React.useState("pending")
 
     React.useEffect(()=>{
         submit()
@@ -156,6 +157,7 @@ const PrevTicket = ({ setOpenModal }) => {
             </Button> */}
           </Stack>
         </div>
+        <h2>Your Issue is currently {setIssue}</h2>
       </div>
     </div>
   )
