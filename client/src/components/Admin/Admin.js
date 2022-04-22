@@ -12,7 +12,7 @@ const Admin = () => {
 	return (
 		<div className="main_container">
 			<nav className="navbar">
-				<h1>fakebook</h1>
+				<h1>helper</h1>
 				<button className="white_btn" onClick={handleLogout}>
 					Logout
 				</button>

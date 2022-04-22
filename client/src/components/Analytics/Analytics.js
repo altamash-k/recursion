@@ -3,8 +3,10 @@ import BarChart from './Barchart'
 import LineChart from './Linechart'
 import PieChart from './Piechart'
 import { UserData } from './Data'
+import Button from '../Button/Buttons';
 
 const Analytics = () => {
+
     const [userData, setUserData] = useState({
         labels: UserData.map((data) => data.day),
         datasets: [
@@ -34,6 +36,9 @@ const Analytics = () => {
         <div style={{ width: 600, marginLeft: "50%", marginTop: "-40%"}}>
             <PieChart chartData={userData} />
         </div>
+
+        <Button />
+
       </>
   )
 }

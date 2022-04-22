@@ -7,6 +7,8 @@ import Login from "./components/Login/Login";
 import Admin from "./components/Admin/Admin";
 import Analytics from "./components/Analytics/Analytics";
 import PrevTicket from "./components/PrevTicket/PrevTicket";
+import ToDo from "./components/ToDo/ToDo";
+
 
 function App() {
 	const user = localStorage.getItem("token");
@@ -22,8 +24,9 @@ function App() {
 			{user && <Route path="/" exact element={<Main />} />}
 			<Route path="/signup" exact element={<Signup />} />
 			<Route path="/login" exact element={<Login />} />
-			<Route path="/admin" exact element={<Admin />} />
+			<Route path="/home" exact element={<Admin />} />
 			<Route path="/analytics" exact element={<Analytics />} />
+			<Route path="/todo" exact element={<ToDo />} />
 			<Route path="/prev-tickets" exact element={<PrevTicket />} />
 			<Route path="/" element={<Navigate replace to="/login" />} />
 		</Routes>

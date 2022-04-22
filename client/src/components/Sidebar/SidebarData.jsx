@@ -3,8 +3,10 @@ import HomeIcon from '@mui/icons-material/Home';
 import MailIcon from '@mui/icons-material/Mail';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import GroupIcon from '@mui/icons-material/Group';
-import PermMediaIcon from '@mui/icons-material/PermMedia';
+// import GroupIcon from '@mui/icons-material/Group';
+// import PermMediaIcon from '@mui/icons-material/PermMedia';
+import HistoryIcon from '@mui/icons-material/History';
+import ListAltIcon from '@mui/icons-material/ListAlt';
 
 export const SidebarData = [
     {
@@ -23,19 +25,14 @@ export const SidebarData = [
         link:"/analytics"
     },
     {
-        title: "Dashboard",
-        icon: <DashboardIcon />,
-        link:"/dashboard"
+        title: "History",
+        icon: <HistoryIcon />,
+        link:"/history"
     },
     {
-        title: "Friends",
-        icon: <GroupIcon />,
-        link:"/friends"
+        title: "To-Do List",
+        icon: <ListAltIcon />,
+        link:"/todo"
     },
-    {
-        title: "Images",
-        icon: <PermMediaIcon />,
-        link:"/images"
-    }
 ];
 
