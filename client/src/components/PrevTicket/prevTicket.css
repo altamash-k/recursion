@@ -1,3 +1,6 @@
+ body {
+   scroll-behavior: smooth;
+ }
 .modalBackground {
     width: 100vw;
     height: 100vh;
@@ -17,21 +20,20 @@
     border-radius: 4px;
     box-sizing: border-box;
   }
-  .modalContainer {
-    width: 500px;
-    height: 550px;
+   .modalContainerPrev {
+    width: 1000px;
+    height: auto;
     border-radius: 12px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
-    /* padding: 25px; */
-    margin-top: -1000px;
-    margin-left: 300px;
-  }
+    padding: 25px; 
+    /* margin-top: 100px; */
+    /* margin-left: 300px;  */
+} 
   .delete {
     background-color: red;
-
   }
   
   .modalContainer .title {
@@ -43,6 +45,13 @@
   .titleCloseBtn {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .upper-form-prev {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .titleCloseBtn button {
@@ -61,7 +70,7 @@
     text-align: center;
   }
   
-  .modalContainer .footer {
+  .modalContainerPrev .footer {
     flex: 20%;
     display: flex;
     justify-content: center;
